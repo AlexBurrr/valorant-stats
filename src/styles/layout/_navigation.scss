@@ -1,0 +1,31 @@
+
+
+nav{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    top: 98%;
+    justify-content: flex-end;
+
+
+    .btn-container{
+        position: absolute;
+        width: 3.5rem;
+        height: 3.5rem;
+        background-color: #D34755;
+        border-radius: 100%;
+        bottom: .5rem;
+        right: 1rem;
+
+        box-shadow:0px 5px 70px ;
+        .nav-icon{
+            position: relative;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+    }
+    
+
+
+   
+}

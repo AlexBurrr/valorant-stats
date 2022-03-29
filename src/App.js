@@ -1,15 +1,13 @@
-import './App.css';
-import Nav from './components/Nav';
-import PlayerSearch from './components/PlayerSearch';
-import Test from './components/test'
+import "./App.css";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
+import Test from "./components/test";
 
 function App() {
   return (
     <div className="App">
-      
-     <Test />
-     <PlayerSearch />
-     <Nav />
+      <Hero />
+      <Nav />
     </div>
   );
 }

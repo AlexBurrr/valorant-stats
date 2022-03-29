@@ -34,33 +34,44 @@ nav .btn-container .nav-icon {
   height: 1.8rem;
 }
 
-.search-container {
-  height: 30rem;
+.hero-container {
+  height: 95vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  top: 20%;
+  background-color: #0f1923;
 }
-.search-container header {
-  height: 10rem;
+.hero-container .header-wrapper {
+  position: relative;
+  padding-top: 30%;
+  height: 40%;
 }
-.search-container header h1 {
+.hero-container header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-left: 5%;
+}
+.hero-container header h1 {
   font-family: Rajdhani, Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   font-size: 3.2rem;
   color: #e7e8e9;
 }
-.search-container header p {
+.hero-container header p {
   font-size: 1.6rem;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #cccccc;
 }
-.search-container .search-form {
+.hero-container .search-form {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: relative;
+  top: 5%;
 }
-.search-container .search-form .search-input {
+.hero-container .search-form .search-input {
   border: solid black 1px;
   height: 6rem;
   width: 90%;
@@ -70,18 +81,25 @@ nav .btn-container .nav-icon {
   background-color: #e7e8e9;
   padding-left: 1rem;
 }
-.search-container .search-form .search-input::-moz-placeholder {
+.hero-container .search-form .search-input::-moz-placeholder {
   position: relative;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.6rem;
 }
-.search-container .search-form .search-input:-ms-input-placeholder {
+.hero-container .search-form .search-input:-ms-input-placeholder {
   position: relative;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.6rem;
 }
-.search-container .search-form .search-input::placeholder {
+.hero-container .search-form .search-input::placeholder {
   position: relative;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.6rem;
+}
+
+.top-player-wrapper {
+  height: 100%;
+  font-size: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen-Sans, Ubuntu, Cantarell, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.6rem;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

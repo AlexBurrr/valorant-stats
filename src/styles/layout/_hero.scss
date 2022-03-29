@@ -1,12 +1,24 @@
-.search-container {
-  height: 30rem;
+.hero-container {
+  height: 95vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  top: 20%;
+
+  .header-wrapper {
+    position: relative;
+    padding-top: 30%;
+    height: 40%;
+  }
+
+  background-color: $color-valorant-dark;
 
   header {
-    height: 10rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 5%;
+
     h1 {
       font-family: $font-h1;
       font-weight: 700;
@@ -24,6 +36,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    position: relative;
+    top: 5%;
     .search-input {
       border: solid black 1px;
       height: 6rem;
@@ -42,4 +56,11 @@
       }
     }
   }
+}
+
+.top-player-wrapper {
+  height: 100%;
+  font-size: $font-secondary;
+  font-size: 1.6rem;
+  color: white;
 }

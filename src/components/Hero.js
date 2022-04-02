@@ -2,26 +2,16 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
-  const [bestNA, setBestNA] = useState([]);
-  const [bestEU, setBestEU] = useState([]);
-  const [bestAP, setBestAP] = useState([]);
-  const [bestKR, setBestKR] = useState([]);
-  useEffect(() => {
-    const regions = ["na", "eu", "ap", "kr"];
+  const bestUrl = `https://api.henrikdev.xyz/valorant/v1/leaderboard/na`;
+  const [topThree, setTopThree] = useState();
 
-    for (let i = 0; i < regions.length; i++) {
-      axios
-        .get(`https://api.henrikdev.xyz/valorant/v1/leaderboard/${regions[i]}`)
-        .then((res) => {
-          setBestNA([res.data[0]]);
-          setBestEU([res.data[1]]);
-          setBestAP([res.data[2]]);
-          setBestKR([res.data[3]]);
-        });
-    }
+  useEffect(() => {
+    axios(bestUrl).then((res) => {
+      setTopThree(res.data.slice(0, 3));
+    });
   }, []);
 
-  // console.log(best);
+  console.log(topThree);
 
   return (
     <div className="hero-container">
@@ -38,7 +28,11 @@ const Hero = () => {
           />
         </form>
       </section>
-      <section className="top-player-wrapper"></section>
+      <section className="top-player-wrapper">
+        {topThree.map((player, index) => (
+          <div>{player.gameName}</div>
+        ))}
+      </section>
     </div>
   );
 };

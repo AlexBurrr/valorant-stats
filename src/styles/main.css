@@ -20,8 +20,8 @@ nav {
 }
 nav .btn-container {
   position: absolute;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   background-color: #ff4655;
   border-radius: 100%;
   bottom: 0.5rem;
@@ -30,8 +30,8 @@ nav .btn-container {
 }
 nav .btn-container .nav-icon {
   position: relative;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2.6rem;
+  height: 2.6rem;
 }
 
 .hero-container {

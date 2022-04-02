@@ -1,13 +1,10 @@
 import "./App.css";
-import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import Test from "./components/test";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <Nav />
+      <Home />
     </div>
   );
 }
